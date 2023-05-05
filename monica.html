@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mônica Nunes</title>
+    <meta name="description" content="Mônica Nunes. Desenvolvedora Back-End.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --color: #000;
+            --background-color: #fff;
+            --contrast-color: #fff;
+            --font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        @media only screen and (prefers-color-scheme: dark) {
+
+            :root {
+                --color: #fff;
+                --background-color: #000;
+                --contrast-color: #000;
+            }
+
+            /*
+            body {
+                background-blend-mode: luminosity;
+            }
+            */
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            color: var(--color);
+            font-size: 1.6rem;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+            background-image: url('./borboletas-direita.svg'), url('./borboletas-esquerda.svg'), url('./borboleta.svg');
+            background-size: auto 25vh, auto 25vh, auto 50vh;
+            background-position: bottom left, top left, bottom right;
+            background-repeat: no-repeat;
+        }
+
+        a {
+            color: var(--color);
+            text-decoration: none;
+            outline: none;
+        }
+
+        a:hover {
+            color: var(--contrast-color);
+            background-color: var(--color);
+        }
+
+        header {
+            text-align: center;
+            margin-top: 10rem;
+        }
+
+        nav {
+            margin-top: 4rem;
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin-right: 2rem;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Subtitle */
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav a {
+            display: inline-block;
+            border: 2px solid var(--color);
+            padding: 1rem 2rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            color: var(--contrast-color);
+            background-color: var(--color);
+        }
+
+        /* Responsive */
+        @media only screen and (max-width: 768px) {
+            body {
+                justify-content: normal;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            nav a {
+                font-size: 1.4rem;
+                padding: 0.8rem 1.6rem;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Mônica Nunes</h1>
+        <h2>Back-End Developer</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/monicanunes">LinkedIn</a></li>
+            <li><a href="https://github.com/monicanunes">Github</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
